@@ -73,8 +73,8 @@
     {
       "id": 9,
       "img": "product17.jpeg",
-      "img_hover": "product17-17jpeg",
-      "name": "قلادة فضية بتصميم عصري باللون الابيض",
+      "img_hover": "product17-17.jpeg",
+      "name": "قلادة فضية بتصميم عصري باللون الازرق",
       "price": 2
     },
     {
@@ -160,11 +160,11 @@
       "img_hover": "product9-9.jpeg",
       "name": "2 مبخرة خشبية مع بخور",
       "price": 2
-    },
+    }و
     {
       "id": 22,
       "img": "product23.jpeg",
-      "img_hover": "product239-23.jpeg",
+      "img_hover": "product23-23.jpeg",
       "name": "عدسات هاتف خارجية",
       "price": 2
     }
