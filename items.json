@@ -160,5 +160,12 @@
       "img_hover": "product9-9.jpeg",
       "name": "2 مبخرة خشبية مع بخور",
       "price": 2
+    },
+    {
+      "id": 22,
+      "img": "product23.jpeg",
+      "img_hover": "product239-23.jpeg",
+      "name": "عدسات هاتف خارجية",
+      "price": 2
     }
   ]
