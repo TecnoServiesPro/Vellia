@@ -151,7 +151,7 @@
       "id": 20,
       "img": "product8.jpeg",
       "img_hover": "product8-8.jpeg",
-      "name": "",ضوء قمر شحن
+      "name": "ضوء قمر زجاج",
       "price": 3
     },
     {
@@ -159,6 +159,13 @@
       "img": "product9.jpeg",
       "img_hover": "product9-9.jpeg",
       "name": "2 مبخرة خشبية مع بخور",
+      "price": 2
+    }و
+    {
+      "id": 22,
+      "img": "product23.jpeg",
+      "img_hover": "product239-23.jpeg",
+      "name": "عدسات هاتف خارجية",
       "price": 2
     }
   ]
