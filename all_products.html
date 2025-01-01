@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vellia</title>
+
+<!--File css-->
+<link rel="stylesheet" href="css/style.css">
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <div class="container top-nav">
+      <a href="#" class="logo1"><img src="imges/logo00.jpg" alt=""></a>
+        <a href="#" class="logo"><img src="imges/vellia.png" alt=""></a>
+        <form action="" class="search">
+            <input type="search" placeholder="search for products">
+            <button type="submit">search</button>
+        </form>
+
+        <div class="cart_header">
+            <div onclick="open_cart()" class="icon_cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="count_item">0</span>
+            </div>
+            <div class="tottal_price">
+                <p>my cart</p>
+                <p class="price_cart_head">$0</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="links container">
+          <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+              <span onclick="close_menu()" class="bg-overlay"></span>             
+               <i onclick="close_menu()" class="fa-solid fa-square-xmark btn_close_menu"></i>
+              <img class="logo_menu" src="imges/vellia.png" alt="">
+                <li class="active"><a href="index.html">home</a></li>
+                <li><a href="all_products.html">all products</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+
+            <div class="loging_signup">
+                <a href="#">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="#">sign up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+    </nav>
+  </header>  
+
+<div class="cart">
+    <div class="top_cart">
+        <h3>My cart <span class="count_item_cart">(0Item in Cart)</span></h3>
+        <span  onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+   <div class="items_in_cart">
+
+   </div>
+    <div class="bottom_cart">
+        <div class="total">
+            <p>Cart subtottal</p>
+            <p class="price_cart_total">$0</p>
+        </div>
+        <div class="button_cart">
+            <a href="#" class="btn_cart">Proceed to chechout</a>
+            <button class="btn_cart trans_bg">shop more</button>
+        </div>
+    </div>
+</div>
+
+<div class="top_page">
+    <div class="container">
+        <h1>Experience the future of ....</h1>
+        <p>find every think you need ....</p>
+    </div>
+</div>
+
+<section class="all_products">
+    
+  <div class="container">
+    <span class="btn_filter" onclick="open_close_filter()">
+        <i class="fa-solid fa-arrow-up-wide-short"></i>
+        </span>
+    <div class="filter">
+        <h2>filter</h2>
+        <div class="filter_item">
+            <h4>Category</h4>
+            <div class="content">
+                <div class="item">
+                    <span>All Category</span>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <span>Home Accessories</span>
+                    <input type="checkbox">
+                </div>
+
+                <div class="item">
+                    <span>Personal Accessories</span>
+                    <input type="checkbox">
+                </div>
+
+                <div class="item">
+                    <span>Electronics</span>
+                    <input type="checkbox">
+                </div>
+
+                <div class="item">
+                    <span>Clothes</span>
+                    <input type="checkbox">
+                </div>
+                <div class="item">
+                    <span>Shoes</span>
+                    <input type="checkbox">
+                </div>
+
+                <div class="item">
+                    <span>Makeup</span>
+                    <input type="checkbox">
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="filter_item">
+        <h4>Packages</h4>
+        <div class="content">
+            <div class="item">
+                <span>All Packages</span>
+                <input type="checkbox">
+            </div>
+            <div class="item">
+                <span>two products</span>
+                <input type="checkbox">
+            </div>
+
+            <div class="item">
+                <span>three products</span>
+                <input type="checkbox">
+            </div>
+
+            <div class="item">
+                <span>Four products</span>
+                <input type="checkbox">
+            </div>
+
+            <div class="item">
+                <span>five products and more</span>
+                <input type="checkbox">
+            </div>
+    </div>
+</div>
+
+
+
+<div class="filter_item">
+    <h4>color</h4>
+    <div class="content">
+        <div class="item">
+            <span class="color" style="background: rgba(214, 152, 18, 0.603);"></span>
+            <input type="checkbox">
+        </div>
+        <div class="item">
+            <span class="color" style="background: blue;"></span>
+            <input type="checkbox">
+        </div>
+        <div class="item">
+            <span class="color" style="background: black;"></span>
+            <input type="checkbox">
+        </div>
+        <div class="item">
+            <span class="color" style="background: white;"></span>
+            <input type="checkbox">
+        </div>
+        <div class="item">
+            <span class="color" style="background: red;"></span>
+            <input type="checkbox">
+        </div>
+        <div class="item">
+            <span class="color" style="background: rgb(255, 255, 0);"></span>
+            <input type="checkbox">
+        </div>
+        
+        
+        
+        
+        
+</div>
+</div>
+    </div>
+
+    <div id="products_dev" class="products_dev">
+
+    </div>
+  </div>  
+
+
+  <div class="pagination">
+    <span class="btn_page prev"><i class="fa-solid fa-backward-step"></i></span>
+    <a href="all_products.html"> <span class="num_page active">1</span> </a>    
+    <a href="#"><span class="num_page ">2</span></a>
+    <a href="#"><span class="num_page ">3</span></a>
+    <span class="btn_page next"><i class="fa-solid fa-forward-step"></i></span>
+
+</div>
+</section>
+
+
+
+
+
+<div class="back_to_top">
+  <p>back to top</p>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="big_row">
+      <img src="logo-remove.png" alt="">
+      <div class="hotline">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div class="text">
+          <h5>Hotline Free:</h5>
+          <h6>+962781362972</h6>
+        </div>
+      </div>
+      <p>You can communicate by phone number or WhatsApp</p>
+    </div>
+    <div class="row">
+      <h4>Help</h4>
+
+      <div class="links">
+        <a href="#">F.A.Q's</a>
+        <a href="#">ordering Tracking</a>
+        <a href="#">Contacts</a>      
+        <a href="#">Events</a>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+    <div class="row">
+      <h4>shipping & Delivery</h4>
+
+      <div class="links">
+        <a href="#">Delivery Info</a>
+        <a href="#">Discount</a>
+        <a href="#">payment & shipping</a>      
+        <a href="#">Estimated Delivery Time</a>
+        <a href="#">Shipping Guide</a>
+      </div>
+    </div>
+
+      <div class="row">
+        <h4>Info</h4>
+  
+        <div class="links">
+          <a href="#">Popular</a>
+          <a href="#">Our Services</a>
+          <a href="#">Your Account</a>      
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Condition</a>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="bottom_footer">
+    <div class="container">
+      <p>All rights reserved to <span>Vellia</span> brand </p>
+
+      <div class="payment_img">
+        <img src="img/payment-1.png" alt="">
+        <img src="img/payment-2.png" alt="">
+        <img src="img/payment-3.png" alt="">
+        <img src="img/payment-4.png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/all_products.js"></script>
+
+</body>
+</html>

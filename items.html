@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vellia</title>
+
+<!--File css-->
+<link rel="stylesheet" href="css/style.css">
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+  <header>
+    <div class="container top-nav">
+      <a href="#" class="logo1"><img src="imges/logo00.jpg" alt=""></a>
+        <a href="#" class="logo"><img src="imges/vellia.png" alt=""></a>
+        <form action="" class="search">
+            <input type="search" placeholder="search for products">
+            <button type="submit">search</button>
+        </form>
+
+        <div class="cart_header">
+            <div onclick="open_cart()" class="icon_cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="count_item">0</span>
+            </div>
+            <div class="tottal_price">
+                <p>my cart</p>
+                <p class="price_cart_head">$0</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="links container">
+          <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+              <span onclick="close_menu()" class="bg-overlay"></span>             
+               <i onclick="close_menu()" class="fa-solid fa-square-xmark btn_close_menu"></i>
+              <img class="logo_menu" src="imges/vellia.png" alt="">
+                <li class="active"><a href="">home</a></li>
+                <li><a href="">all products</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+
+            <div class="loging_signup">
+                <a href="#">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="#">sign up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+    </nav>
+  </header>  
+  
+
+<div class="cart">
+    <div class="top_cart">
+        <h3>My cart <span class="count_item_cart">(0Item in Cart)</span></h3>
+        <span  onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+   <div class="items_in_cart">
+
+   </div>
+    <div class="bottom_cart">
+        <div class="total">
+            <p>Cart subtottal</p>
+            <p class="price_cart_total">$0</p>
+        </div>
+        <div class="button_cart">
+            <a href="#" class="btn_cart">Proceed to chechout</a>
+            <button class="btn_cart trans_bg">shop more</button>
+        </div>
+    </div>
+</div>
+
+<div class="item_detail">
+    <div class="container">
+
+
+        <div class="img_item">
+            <div class="big_img">
+                <img id="bigImg" src="img/product/product-1.jpg" alt="">
+            </div>
+            <div class="sm_imgs">
+                <img onclick="ChangeItemImage(this.src)" src="img/product/product-1.jpg" alt="">
+                <img onclick="ChangeItemImage(this.src)" src="img/product/product1.jpg" alt="">
+                <img onclick="ChangeItemImage(this.src)" src="img/product/product-2.jpg" alt="">
+                <img onclick="ChangeItemImage(this.src)" src="img/product/product2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="details_item">
+            <h1 class="name">Xbox Core Wireless Gaming Controller – Deep Pink – Xbox Series X|S, Xbox One, Windows PC, Android, and iOS</h1>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="price">
+                <p><span>20JD</span></p>
+                <p class="old_price">25JD</p>
+            </div>
+            <h5>Availability: <span>In stock</span></h5>
+            <h5>Platform: <span>Xbox One, Windows, Xbox Series S, Xbox Series X</span></h5>
+            <p class="text_p">About this item</p>
+            <h4>XBOX DEEP PINK WIRELESS CONTROLLER: Experience the modernized design of the Xbox Wireless Controller, featuring sculpted surfaces and refined geometry for enhanced comfort during gameplay with battery life up to 40 hours.</h4>
+            <button>Add to cart   <i class="fa-solid fa-cart-plus"></i></button>
+            <div class="icons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-sliders"></i></span>
+                <span><i class="fa-solid fa-print"></i></span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="slide slide_sale">
+  <div class="container">
+    <div class="sale_sec mySwiper">
+      <div class="top_slide">
+        <h2>on sale <span>product</span></h2>
+      </div>
+      <div id="swiper_items_sale" class="products swiper-wrapper">
+        
+      </div>
+
+      <div class="swiper-button-next btn_swip"></div>
+      <div class="swiper-button-prev btn_swip"></div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="back_to_top">
+  <p>back to top</p>
+</div>
+
+
+<footer>
+  <div class="container">
+    <div class="big_row">
+      <img src="logo-remove.png" alt="">
+      <div class="hotline">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div class="text">
+          <h5>Hotline Free:</h5>
+          <h6>+962781362972</h6>
+        </div>
+      </div>
+      <p>You can communicate by phone number or WhatsApp</p>
+    </div>
+    <div class="row">
+      <h4>Help</h4>
+
+      <div class="links">
+        <a href="#">F.A.Q's</a>
+        <a href="#">ordering Tracking</a>
+        <a href="#">Contacts</a>      
+        <a href="#">Events</a>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+    <div class="row">
+      <h4>shipping & Delivery</h4>
+
+      <div class="links">
+        <a href="#">Delivery Info</a>
+        <a href="#">Discount</a>
+        <a href="#">payment & shipping</a>      
+        <a href="#">Estimated Delivery Time</a>
+        <a href="#">Shipping Guide</a>
+      </div>
+    </div>
+
+      <div class="row">
+        <h4>Info</h4>
+  
+        <div class="links">
+          <a href="#">Popular</a>
+          <a href="#">Our Services</a>
+          <a href="#">Your Account</a>      
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Condition</a>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="bottom_footer">
+    <div class="container">
+      <p>All rights reserved to <span>Vellia</span> brand </p>
+
+      <div class="payment_img">
+        <img src="img/payment-1.png" alt="">
+        <img src="img/payment-2.png" alt="">
+        <img src="img/payment-3.png" alt="">
+        <img src="img/payment-4.png" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/swiper.js"></script>
+<script src="js/items-home.js"></script>
+
+</body>
+</html>
+
