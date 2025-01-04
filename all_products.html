@@ -7,73 +7,143 @@
 
 <!--File css-->
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
 <!--font awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
-  <header>
-    <div class="container top-nav">
-      <a href="#" class="logo1"><img src="logo00.jpg" alt=""></a>
-        <a href="#" class="logo"><img src="vellia.png" alt=""></a>
-        <form action="" class="search">
-            <input type="search" placeholder="search for products">
-            <button type="submit">search</button>
-        </form>
-
-        <div class="cart_header">
-            <div onclick="open_cart()" class="icon_cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span class="count_item">0</span>
-            </div>
-            <div class="tottal_price">
-                <p>my cart</p>
-                <p class="price_cart_head">$0</p>
-            </div>
+  <div class="cart">
+        <div class="top_cart">
+            <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
         </div>
-    </div>
 
-    <nav>
-        <div class="links container">
-          <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
-            <ul id="menu">
-              <span onclick="close_menu()" class="bg-overlay"></span>             
-               <i onclick="close_menu()" class="fa-solid fa-square-xmark btn_close_menu"></i>
-              <img class="logo_menu" src="imges/vellia.png" alt="">
-                <li class="active"><a href="index.html">home</a></li>
-                <li><a href="all_products.html">all products</a></li>
-                <li><a href="">about us</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
 
-            <div class="loging_signup">
-                <a href="#">login <i class="fa-solid fa-right-to-bracket"></i></a>
-                <a href="#">sign up <i class="fa-solid fa-user-plus"></i></a>
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>subtotal</p>
+                <p class="price_cart_toral">$0</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="checkout.html" class="btn_cart btn">Checkout</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
             </div>
         </div>
-    </nav>
-  </header>  
 
-<div class="cart">
-    <div class="top_cart">
-        <h3>My cart <span class="count_item_cart">(0Item in Cart)</span></h3>
-        <span  onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
     </div>
 
-   <div class="items_in_cart">
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="vellia.png" alt=""></a>
 
-   </div>
-    <div class="bottom_cart">
-        <div class="total">
-            <p>Cart subtottal</p>
-            <p class="price_cart_total">$0</p>
+                <form action="" class="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category">
+
+                            <option value="All Categories">AlL Categories</option>
+                            <option value="Electronics & Digita">Home Accesories</option>
+                            <option value="Phones & Tablet">Personal Accesories</option>
+                            <option value="Fashion & Clothings">Electronics</option>
+                            <option value="Telivsion & Monitor">Clothes</option>
+                            <option value="Jewelry & Watches">Perfums</option>
+                            <option value="Washing Machine">Makeup</option>
+                            <option value="Toys & Hobbies">Packages</option>
+
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="button_cart">
-            <a href="checkout.html" class="btn_cart">Proceed to chechout</a>
-            <button class="btn_cart trans_bg">shop more</button>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Browse Category</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">Top 10 Offers</a>
+                            <a href="#">Electronics</a>
+                            <a href="#">Home Accesories</a>
+                            <a href="#">Personal Accesories</a>
+                            <a href="#">Clothes</a>
+                            <a href="#">Perfums</a>
+                            <a href="#">Packages</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about us.html">About</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="#" class="btn">Login  <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="#" class="btn">Sign UP <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
         </div>
-    </div>
-</div>
+
+        
+    </header>
+
 
 <div class="top_page">
     <div class="container">
@@ -222,73 +292,86 @@
 </div>
 
 
-<footer>
-  <div class="container">
-    <div class="big_row">
-      <img src="logo-remove.png" alt="">
-      <div class="hotline">
-        <i class="fa-solid fa-phone-volume"></i>
-        <div class="text">
-          <h5>Hotline Free:</h5>
-          <h6>+962781362972</h6>
+ <footer>
+        <div class="container">
+
+            <div class="big_row">
+                <img class="logo_footer" src="logo-remove.png" alt="">
+
+                <p>To communicate with phone number or social networking sites</p>
+
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Find It Fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>Home Accessories</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>Personal Accessories</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>Electronics</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>Packages</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>other...</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Quick Links</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <p>You can communicate by phone number or WhatsApp</p>
-    </div>
-    <div class="row">
-      <h4>Help</h4>
 
-      <div class="links">
-        <a href="#">F.A.Q's</a>
-        <a href="#">ordering Tracking</a>
-        <a href="#">Contacts</a>      
-        <a href="#">Events</a>
-        <a href="#">Help Center</a>
-      </div>
-    </div>
-    <div class="row">
-      <h4>shipping & Delivery</h4>
+        <div class="bottom_footer">
+            <div class="container">
+                <p>All Rights Reserved <span>Vellia Brand</span></p>
 
-      <div class="links">
-        <a href="#">Delivery Info</a>
-        <a href="#">Discount</a>
-        <a href="#">payment & shipping</a>      
-        <a href="#">Estimated Delivery Time</a>
-        <a href="#">Shipping Guide</a>
-      </div>
-    </div>
-
-      <div class="row">
-        <h4>Info</h4>
-  
-        <div class="links">
-          <a href="#">Popular</a>
-          <a href="#">Our Services</a>
-          <a href="#">Your Account</a>      
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Condition</a>
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
+    </footer>
 
 
-  <div class="bottom_footer">
-    <div class="container">
-      <p>All rights reserved to <span>Vellia</span> brand </p>
-
-      <div class="payment_img">
-        <img src="payment-1.png" alt="">
-        <img src="payment-2.png" alt="">
-        <img src="payment-3.png" alt="">
-        <img src="payment-4.png" alt="">
-      </div>
-    </div>
-  </div>
-</footer>
 
 
-<script src="main.js"></script>
-<script src="all_products.js"></script>
+
+
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- File JS -->
+     
+      <script src="swiper.js"></script>
+      <script src="items_home.js"></script>
+      <script src="main.js"></script>
+	  <script src="all_products.js"></script>
 
 </body>
 </html>
