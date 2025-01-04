@@ -2,170 +2,188 @@
 [
     {
       "id": 0,
-      "img": "product1.jpeg",
-      "img_hover": "product1-1.jpeg",
-      "name":"مبخرة زيتية باربع روائح",
-      "price": 4,
-      "old_price": 5
+      "img": "products/product1.1.jpeg",
+      "img_hover": "products/product1.2.jpeg",
+      "name":"Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 3,
+      "old_price": 0
 
     },
     {
       "id": 1,
-      "img": "product2.jpeg",
-      "img_hover": "product2-2.jpeg",
-      "name": "شمع مرطبان معطر حجم كبير",
-      "price": 2.5,
-      "old_price": 3
+      "img": "products/product2.1.jpeg",
+      "img_hover": "products/product2.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 3,
+      "old_price": 0
     },
     {
       "id": 2,
-      "img": "product10.jpeg",
-      "img_hover": "product10-10.jpeg",
-      "name": "شمع سادة",
-      "price": 1.5,
-      "old_price": 3
+      "img": "products/product3.1.jpeg",
+      "img_hover": "products/product3.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 3,
+      "old_price": 0
     },
     {
       "id": 3,
-      "img": "product11.jpeg",
-      "img_hover": "product11-11.jpeg",
-      "name": "شمع سادة",
-      "price": 1.5
+      "img": "products/product4.1.jpeg",
+      "img_hover": "products/product4.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 5,
+      "old_price": 8
     },
     {
       "id": 4,
-      "img": "product12.jpeg",
-      "img_hover": "product12-12.jpeg",
-      "name": "تقويم مكتبي خشبي",
-      "price": 3,
-      "old_price": 5
+      "img": "products/product5.2.jpeg",
+      "img_hover": "products/product5.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 5,
+      "old_price": 8
 
     },
     {
       "id": 5,
-      "img": "product13.jpeg",
-      "img_hover": "product13-13.jpeg",
-      "name": "تقويم مكتبي خشبي",
-      "price": 3
+      "img": "products/product6.1.jpeg",
+      "img_hover": "products/product6.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 3,
+      "old_price": 5
     },
     {
       "id": 6,
-      "img": "product14.jpeg",
-      "img_hover": "product14-14.jpeg",
-      "name": "تقويم مكتبي خشبي",
-      "price": 3
+      "img": "products/product7.1.jpeg",
+      "img_hover": "products/product7.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 3,
+      "old_price": 5
     },
     {
       "id": 7,
-      "img": "product15.jpeg",
-      "img_hover": "product15-15.jpeg",
-      "name": "قلادة بتعليقة شريحة البطيخ المميزة",
+      "img": "products/product8.1.jpeg",
+      "img_hover": "products/product8.2.jpeg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
       "price": 2,
-      "old_price": 4
+      "old_price": 3
     },
     {
       "id": 8,
-      "img": "product16.jpeg",
-      "img_hover": "product16-16.jpeg",
-      "name": "قلادة فضية بتصميم عصري باللون الابيض",
-      "price": 2
+      "img": "img/product/product-1.jpg",
+      "img_hover": "img/product/product1.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 180
     },
     {
       "id": 9,
-      "img": "product17.jpeg",
-      "img_hover": "product17-17.jpeg",
-      "name": "قلادة فضية بتصميم عصري باللون الازرق",
-      "price": 2
+      "img": "img/product/product-2.jpg",
+      "img_hover": "img/product/product2.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 300
     },
     {
       "id": 10,
-      "img": "product18.jpeg",
-      "img_hover": "product18-18.jpeg",
-      "name": "مبخرة زجاجية",
-      "price": 2
+      "img": "img/product/product-3.jpg",
+      "img_hover": "img/product/product3.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 250
     },
     {
       "id": 11,
-      "img": "product19.jpeg",
-      "img_hover": "product19-19.jpeg",
-      "name": "بروشور نصف بطيخة",
-      "price": 2
+      "img": "img/product/product-4.jpg",
+      "img_hover": "img/product/product4.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 120
     },
     {
       "id": 12,
-      "img": "product20.jpeg",
-      "img_hover": "product20-20.jpeg",
-      "name": "بروشور على شكل خريطة فلسطين",
-      "price": 2
+      "img": "img/product/product-5.jpg",
+      "img_hover": "img/product/product5.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 90
     },
     {
       "id": 13,
-      "img": "product21.jpeg",
-      "img_hover": "product21-21.jpeg",
-      "name": "ميدالية البطيخة",
-      "price": 1.5
+      "img": "img/product/product-6.jpg",
+      "img_hover": "img/product/product6.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 129
     },
     {
       "id": 14,
-      "img": "product22.jpeg",
-      "img_hover": "product22-22.jpeg",
-      "name": "سنسال فضي",
-      "price": 2
+      "img": "img/product/product-7.jpg",
+      "img_hover": "img/product/product7.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 180
     },
     {
       "id": 15,
-      "img": "product3.jpeg",
-      "img_hover": "product3-3.jpeg",
-      "name": " تقويم مكتبي خشبي",
-      "price": 3
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     },
     {
       "id": 16,
-      "img": "product4.jpeg",
-      "img_hover": "product4-4.jpeg",
-      "name": "تقويم مكتبي خشبي",
-      "price": 3
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 50
     },
     {
       "id": 17,
-      "img": "product5.jpeg",
-      "img_hover": "product5-5.jpeg",
-      "name": "ضوء قمر زجاجي على شكل دولاب",
-      "price": 4
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     },
     {
       "id": 18,
-      "img": "product6.jpeg",
-      "img_hover": "product6-6.jpeg",
-      "name": "ضوء قمر زجاجي على شكل سفينة ",
-      "price": 4
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     },
     {
       "id": 19,
-      "img": "product7.jpeg",
-      "img_hover": "product7-7.jpeg",
-      "name": "1 مبخرة خشبية مع بخور",
-      "price": 2
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     },
     {
       "id": 20,
-      "img": "product8.jpeg",
-      "img_hover": "product8-8.jpeg",
-      "name": "ضوء قمر زجاج",
-      "price": 3
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     },
     {
       "id": 21,
-      "img": "product9.jpeg",
-      "img_hover": "product9-9.jpeg",
-      "name": "2 مبخرة خشبية مع بخور",
-      "price": 2
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     },
     {
       "id": 22,
-      "img": "product23.jpeg",
-      "img_hover": "product23-23.jpeg",
-      "name": "عدسات هاتف خارجية",
-      "price": 2
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
+    },
+    {
+      "id": 23,
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
+    },
+    {
+      "id": 24,
+      "img": "img/product/product-8.jpg",
+      "img_hover": "img/product/product8.jpg",
+      "name": "Original Mobile Android Dual SIM Smart Phone G3",
+      "price": 60
     }
+
   ]
